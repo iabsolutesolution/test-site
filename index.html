@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="앱솔루트솔루션 - 무전기용 정밀 고무 및 산업용 자석 전문 유통 파트너.">
+    <meta name="keywords" content="앱솔루트솔루션, Absolute Solution, 정밀 고무, 산업용 자석, 실리콘 키패드, 네오디뮴, O-ring, B2B 부품">
+    <meta property="og:title" content="Absolute Solution">
+    <meta property="og:description" content="고성능 네오디뮴 자석 및 맞춤형 고무 부품 전문 기업">
+    <meta property="og:image" content="assets/magnets.png">
+    <meta property="og:type" content="website">
+    <title>Absolute Solution | Industrial Magnets & Rubber Components</title>
+
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+
+    <!-- Fonts: Google Fonts (Noto Sans KR & SC) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons (Optional, using FontAwesome CDN for convenience in icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            // Initialize EmailJS with your Public Key
+            // Initialize EmailJS with your Public Key
+            emailjs.init("0oiPyTe7vyJgZ-WZC");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-cube" style="color: var(--color-secondary);"></i> Absolute Solution
+            </a>
+
+            <!-- Centered Navigation -->
+            <nav class="main-nav">
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#products" data-i18n="nav_products">Products</a>
+                <a href="#trust" data-i18n="nav_trust">Why Us</a>
+                <a href="#location" data-i18n="nav_location">Location</a>
+            </nav>
+
+            <!-- Right Actions: Contact + Lang + Mobile Trigger -->
+            <div class="header-actions">
+                <a href="#contact" class="open-rfq desktop-only" data-i18n="nav_contact">Contact</a>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="ko">KR</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="zh">CN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <span class="close-mobile-menu">&times;</span>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#products" data-i18n="nav_products">Products</a>
+        <a href="#trust" data-i18n="nav_trust">Why Us</a>
+        <a href="#location" data-i18n="nav_location">Location</a>
+        <a href="#contact" class="open-rfq" data-i18n="nav_contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1 data-i18n="hero_title">산업용 고무와 자석의 모든 것,<br>앱솔루트솔루션</h1>
+                <p style="margin-top: 1.5rem; color: var(--color-text); max-width: 800px; font-size: 1.25rem;"
+                    data-i18n="hero_desc">
+                    최적의 고무 소재부터 고성능 마그넷까지,<br>
+                    귀사에 필요한 수입 자재를 빠르고 정확하게 공급합니다.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary open-rfq" data-i18n="btn_rfq">견적 문의하기</a>
+                    <a href="#products" class="btn btn-secondary" data-i18n="btn_catalog">제품 카탈로그 보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <h2 data-i18n="about_title">Beyond Distribution,<br>We are your Partner.</h2>
+                    <div style="width: 50px; height: 4px; background: var(--color-secondary); margin: 20px 0;"></div>
+                    <p data-i18n="about_p1">
+                        앱솔루트솔루션은 단순 유통을 넘어, 제조사의 파트너로서 최적의 부품 솔루션을 제안합니다.
+                    </p>
+                    <p data-i18n="about_p2">
+                        중국 현지 공장 직거래를 통한 <strong>단가 경쟁력</strong>과 국내 상시 재고 운영을 통한 <strong>빠른 납기</strong>를 보장합니다. 귀사의 제품
+                        퀄리티를 한 단계 높여드립니다.
+                    </p>
+                </div>
+                <!-- Placeholder for an image or graphic if needed, kept simple for now -->
+                <!-- New Stats Grid (Forced Rebuild) -->
+                <div class="new-stats-grid"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 100%; height: 100%;">
+
+                    <!-- Card 1 -->
+                    <div class="stat-box"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 40px 20px; text-align: center; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <i class="fa-solid fa-user-shield"
+                            style="font-size: 3rem; color: #3B82F6; margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 1.2rem; font-weight: 800; color: white; margin-bottom: 5px;"
+                            data-i18n="stat_qc_title">Quality Control</h4>
+                        <p style="font-size: 0.9rem; color: #888;" data-i18n="stat_qc_desc">100% 현지 전수 검사</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="stat-box"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 40px 20px; text-align: center; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <i class="fa-solid fa-truck-fast"
+                            style="font-size: 3rem; color: #3B82F6; margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 1.2rem; font-weight: 800; color: white; margin-bottom: 5px;"
+                            data-i18n="stat_delivery_title">Fast Delivery</h4>
+                        <p style="font-size: 0.9rem; color: #888;" data-i18n="stat_delivery_desc">국내 재고 보유</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="section history">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" style="text-align: center; margin-bottom: 4rem;"
+                data-i18n="history_section_title">Company Overview & History</h2>
+
+            <div class="history-grid">
+                <!-- Left: Intro Text -->
+                <div class="history-intro animate-on-scroll">
+                    <h3 style="color: #fff; margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="about_section_title">
+                        About Absolute Solution</h3>
+                    <div class="intro-text">
+                        <p data-i18n="about_history_p1">2015년 9월 설립된 앱솔루트 솔루션은 인적자원관리 사업을 시작으로 다양한 분야에서 납품 및 개발을 진행해 온
+                            기업입니다.</p>
+                        <p data-i18n="about_history_p2">당사의 주요 제품으로는 네오디뮴(NdFeB, SmCo, Ferrite 등), Shield Magnet, Magnet
+                            Application을 비롯한 다양한 자석 제품을 제작 및 공급합니다.</p>
+                        <p data-i18n="about_history_p3">또한, 차량 및 외장재 부품용으로 다양한 라바(합성고무) 제품을 제공합니다. 자동차 전기 시스템의 절연 보호를 위한
+                            라바 제품을 공급하여 시스템의 안전성과 안정적인 작동을 보장합니다.</p>
+                        <p data-i18n="about_history_p4">이 외에도 주차 인식 센서, 광분배기 등 다양한 산업 분야의 제품을 개발 및 공급하고 있습니다.</p>
+                    </div>
+                    <!-- Download Brochure Link -->
+                    <a href="/assets/AbsoluteSolution_Brochure.pdf" class="btn-text-download" download
+                        data-i18n="btn_brochure_pdf">
+                        Download Company Brochure (PDF)
+                    </a>
+                </div>
+
+                <!-- Right: Timeline -->
+                <div class="timeline animate-on-scroll">
+                    <!-- 2023 -->
+                    <div class="timeline-row">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-item">
+                                <span class="month">Feb</span>
+                                <span class="desc" data-i18n="hist_2023_feb">애경화장품 화장품 CASE용 네오디늄자석 공급</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2022 -->
+                    <div class="timeline-row">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-item">
+                                <span class="month">Oct</span>
+                                <span class="desc" data-i18n="hist_2022_oct">인프라일렉 완구 조립용 네오디늄 자석 공급</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="month">Jun</span>
+                                <span class="desc" data-i18n="hist_2022_jun">㈜효성전기, 케이엠티, 일오삼코리아 Motor용 자석공급</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="month">Feb</span>
+                                <span class="desc" data-i18n="hist_2022_feb">NINGBO SUNNY WEALTH 과 한국영업소 업무 협약</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2020 -->
+                    <div class="timeline-row">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-item">
+                                <span class="month">Oct</span>
+                                <span class="desc" data-i18n="hist_2020_oct">백금티엔에이 차량용 브라켓용 자석공급 개시</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="month">Mar</span>
+                                <span class="desc" data-i18n="hist_2020_mar">153코리아(모토 종합 회사) 모터용 자석 공급개시</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2018 -->
+                    <div class="timeline-row">
+                        <div class="timeline-year">2018</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-item">
+                                <span class="month">Dec</span>
+                                <span class="desc" data-i18n="hist_2018_dec">ANSON Magnet(중국) 의 한국지사 업무 협약<br>삼성 Folder
+                                    Phone용(B4,B5~) 자석 공급, 애플 Book cover용 자석공급</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2017 -->
+                    <div class="timeline-row">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-item">
+                                <span class="month">Mar</span>
+                                <span class="desc" data-i18n="hist_2017_mar">자석전문화사 ㈜노바텍 경영컨설팅 체결 (~2018.9)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2015 -->
+                    <div class="timeline-row">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-item">
+                                <span class="month">Sep</span>
+                                <span class="desc" data-i18n="hist_2015_sep">㈜앱솔루트솔루션 설립</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ending Arrow -->
+                    <div class="timeline-end">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+        <div class="container">
+            <h2 class="animate-on-scroll" style="text-align: center;" data-i18n="products_title">Our Solutions</h2>
+            <div class="product-grid">
+
+                <!-- Category 1 -->
+                <div class="product-card animate-on-scroll">
+                    <img src="assets/rubber.png" alt="정밀 고무 솔루션" class="product-image product-detail-trigger"
+                        data-type="rubber" style="cursor: pointer;">
+                    <div class="product-info">
+                        <h3 class="product-title" data-i18n="prod_rubber_title">정밀 고무 솔루션</h3>
+                        <p class="product-desc" style="color: var(--color-secondary);" data-i18n="prod_rubber_desc">무전기
+                            및 IT 기기용 초정밀 방수/방진 부품</p>
+                        <ul class="product-items">
+                            <li data-i18n="prod_rubber_item1">키패드 (Silicone/Rubber)</li>
+                            <li data-i18n="prod_rubber_item2">O-링 (O-Ring)</li>
+                            <li data-i18n="prod_rubber_item3">안테나 캡</li>
+                            <li data-i18n="prod_rubber_item4">실리콘 패킹 & 가스켓</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary open-rfq" data-product="Rubber Solution"
+                            style="margin-top: 20px; width: 100%;" data-i18n="btn_bulk_rfq">대량 구매 견적 요청</a>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="product-card animate-on-scroll">
+                    <img src="assets/magnets.png" alt="산업용 자석 솔루션" class="product-image product-detail-trigger"
+                        data-type="magnet" style="cursor: pointer;">
+                    <div class="product-info">
+                        <h3 class="product-title" data-i18n="prod_magnet_title">산업용 자석 솔루션</h3>
+                        <p class="product-desc" style="color: var(--color-secondary);" data-i18n="prod_magnet_desc">고성능
+                            네오디뮴 및 맞춤형 산업 자석</p>
+                        <ul class="product-items">
+                            <li data-i18n="prod_magnet_item1">네오디뮴 (NdFeB)</li>
+                            <li data-i18n="prod_magnet_item2">내열용 SmCo 자석</li>
+                            <li data-i18n="prod_magnet_item3">페라이트 (Ferrite)</li>
+                            <li data-i18n="prod_magnet_item4">고무 자석 시트</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary open-rfq" data-product="Magnet Solution"
+                            style="margin-top: 20px; width: 100%;" data-i18n="btn_bulk_rfq">대량 구매 견적 요청</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process -->
+    <section class="section work-process">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: #fff;" data-i18n="process_title">Work Process
+            </h2>
+            <div class="process-grid">
+                <!-- Step 1 -->
+                <div class="process-item">
+                    <div class="process-icon-box">
+                        <span class="process-step">1</span>
+                        <i class="fa-regular fa-comments process-icon"></i>
+                    </div>
+                    <h3 class="process-title" data-i18n="process_step1_title">Inquiry</h3>
+                    <p class="process-desc" data-i18n="process_step1_desc">Product & Spec Inquiry</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="process-item">
+                    <div class="process-icon-box">
+                        <span class="process-step">2</span>
+                        <i class="fa-solid fa-file-invoice-dollar process-icon"></i>
+                    </div>
+                    <h3 class="process-title" data-i18n="process_step2_title">Quotation</h3>
+                    <p class="process-desc" data-i18n="process_step2_desc">Review Specs & Quote</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="process-item">
+                    <div class="process-icon-box">
+                        <span class="process-step">3</span>
+                        <i class="fa-solid fa-microscope process-icon"></i>
+                    </div>
+                    <h3 class="process-title" data-i18n="process_step3_title">Sample & QC</h3>
+                    <p class="process-desc" data-i18n="process_step3_desc">Sample Approval & QC</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="process-item">
+                    <div class="process-icon-box">
+                        <span class="process-step">4</span>
+                        <i class="fa-solid fa-truck-fast process-icon"></i>
+                    </div>
+                    <h3 class="process-title" data-i18n="process_step4_title">Delivery</h3>
+                    <p class="process-desc" data-i18n="process_step4_desc">Safe & Fast Delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Point Section -->
+    <section id="trust" class="section trust">
+        <div class="container">
+            <h2 class="animate-on-scroll" style="text-align: center;" data-i18n="trust_title">Why Absolute Solution?
+            </h2>
+            <div class="trust-grid">
+                <!-- 1. Quality -->
+                <div class="trust-item">
+                    <i class="fa-solid fa-trophy trust-icon"></i>
+                    <h3 class="trust-title" data-i18n="trust_qc_title">High Quality</h3>
+                    <p data-i18n="trust_qc_desc">출고 전 전수 검사를 통한 불량률 0% 도전</p>
+                </div>
+                <!-- 2. Custom -->
+                <div class="trust-item">
+                    <i class="fa-solid fa-compass-drafting trust-icon"></i>
+                    <h3 class="trust-title" data-i18n="trust_custom_title">Custom Design</h3>
+                    <p data-i18n="trust_custom_desc">고객 니즈에 맞춘 세밀한 커스텀 설계 지원</p>
+                </div>
+                <!-- 3. Price -->
+                <div class="trust-item">
+                    <i class="fa-solid fa-tags trust-icon"></i>
+                    <h3 class="trust-title" data-i18n="trust_price_title">Competitive Price</h3>
+                    <p data-i18n="trust_price_desc">현지 공장 직거래를 통한 최적의 단가 제공</p>
+                </div>
+                <!-- 4. Delivery -->
+                <div class="trust-item">
+                    <i class="fa-solid fa-truck-fast trust-icon"></i>
+                    <h3 class="trust-title" data-i18n="trust_delivery_title">Fast Delivery</h3>
+                    <p data-i18n="trust_delivery_desc">체계적인 물류 시스템으로 안전하고 신속한 납품</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="location" class="section location">
+        <div class="container animate-on-scroll">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #fff;">Location (오시는 길)</h2>
+            <div class="map-container"
+                style="width: 100%; height: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+                <iframe
+                    src="https://maps.google.com/maps?q=120%2C+Heungdeokjungang-ro%2C+Giheung-gu%2C+Yongin-si%2C+Gyeonggi-do&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <p style="text-align: center; margin-top: 1.5rem; color: #cbd5e1; font-size: 1.1rem;">
+                <i class="fa-solid fa-location-dot" style="color: var(--color-accent); margin-right: 8px;"></i>
+                경기 용인시 기흥구 흥덕중앙로 120, 2911호 (영덕동, 유타워)
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="container">
+            <h4>(주)앱솔루트솔루션 | Absolute Solution Co., Ltd.</h4>
+            <div class="footer-info">
+                <p>대표자: 유성민 (CEO: Seongmin Yoo) <span class="divider" style="color: #475569; margin: 0 10px;">|</span>
+                    사업자등록번호: 262-87-00201</p>
+                <p>주소: 경기 용인시 기흥구 흥덕중앙로 120, 2911호 (영덕동, 유타워)</p>
+                <p>Address: Ste 2911, 120, Heungdeokjungang-ro, Giheung-gu, Yongin-si, Gyeonggi-do, Rep. of Korea</p>
+                <p>Email: <a href="mailto:iabsolutesolution@gmail.com">iabsolutesolution@gmail.com</a></p>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="#" id="open-privacy">Privacy Policy</a> | <a href="#">Terms of Use</a>
+                </div>
+                <p>Copyright © 2026 Absolute Solution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- RFQ Modal -->
+    <div class="modal" id="rfq-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 data-i18n="modal_rfq_title">견적 요청 (RFQ)</h3>
+            <p class="modal-desc" data-i18n="modal_rfq_desc">
+                대량 구매 및 커스텀 사양 문의를 남겨주시면 담당자가 24시간 이내에 연락드립니다.
+            </p>
+            <form id="rfq-form">
+                <div class="form-group">
+                    <label for="name">성함 / 담당자명 (Name)</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">회사명 (Company)</label>
+                    <input type="text" id="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일 (Email)</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">연락처 (Phone)</label>
+                    <input type="tel" id="phone" required placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="subject">문의 제품 (Product)</label>
+                    <input type="text" id="subject" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="message">요청 사항 (Message / Qty / Specs)</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-block">견적 요청 보내기 (Send Request)</button>
+            </form>
+
+            <!-- Success Message (Initial State: Hidden) -->
+            <div class="success-message" id="rfq-success" style="display: none;">
+                <div class="success-icon">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <h3 class="success-title">견적 요청이 접수되었습니다!</h3>
+                <p class="success-text">
+                    보내주신 내용은 담당자에게 전달되었으며,<br>
+                    24시간 이내에 빠르게 연락드리겠습니다.
+                </p>
+                <button type="button" class="btn btn-block close-modal-btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="modal" id="privacy-modal">
+        <div class="modal-content" style="max-width: 600px;">
+            <span class="close-modal" id="close-privacy">&times;</span>
+            <h3 style="margin-bottom: 2rem; color: #1e293b;">개인정보처리방침</h3>
+            <div class="privacy-text" style="text-align: left; color: #334155; line-height: 1.7; font-size: 0.95rem;">
+                <p><strong>1. 개인정보의 수집 및 이용 목적</strong><br>견적 상담 및 사업 문의 응대</p>
+                <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 1rem 0;">
+                <p><strong>2. 수집하는 개인정보의 항목</strong><br>성명, 이메일 주소, 회사명</p>
+                <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 1rem 0;">
+                <p><strong>3. 개인정보의 보유 및 이용 기간</strong><br>문의 처리 완료 후 3년간 보관 후 파기</p>
+                <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 1rem 0;">
+                <p><strong>4. 시행일</strong><br>본 방침은 2026년 1월 1일부터 시행됩니다.</p>
+            </div>
+            <button type="button" class="btn btn-block" id="privacy-confirm"
+                style="margin-top: 2rem; background: #0f172a; color: #fff;">확인</button>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-product">&times;</span>
+            <img src="" alt="Product Detail" class="modal-product-image" id="modal-product-img">
+            <div class="modal-product-info">
+                <h3 class="modal-product-title" id="modal-product-title">Product Title</h3>
+                <p class="modal-product-desc" id="modal-product-desc">Product Description...</p>
+                <div class="modal-article">
+                    <ul class="modal-specs-list" id="modal-product-specs">
+                        <!-- Specs populated via JS -->
+                    </ul>
+                </div>
+                <div class="modal-actions" style="margin-top: 2rem;">
+                    <a href="#" class="btn open-rfq" id="modal-rfq-btn" data-product="Product Name" data-i18n="btn_rfq"
+                        style="width: 100%; justify-content: center;">
+                        견적 문의하기
+                    </a>
+                    <p style="margin-top: 1rem; color: #94a3b8; font-size: 0.9rem; text-align: center;"
+                        data-i18n="modal_contact_note">
+                        * 대량 구매 및 커스텀 사양 문의 환영
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Script -->
+    <script src="main.js"></script>
+</body>
+
+</html>
